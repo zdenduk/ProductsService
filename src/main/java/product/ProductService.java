@@ -54,7 +54,7 @@ public class ProductService extends productsGrpc.productsImplBase {
         String sql = "delete from products where id=" + pid;
         PreparedStatement stmt;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("org.postgresql.Driver");
             Connection cons = DriverManager.getConnection("jdbc:mysql://localhost:3306/maven", "root", "root");
             stmt = cons.prepareStatement(sql);
             stmt.executeUpdate();
@@ -87,7 +87,7 @@ public class ProductService extends productsGrpc.productsImplBase {
         String sql = "delete from products where id=" + pid;
         PreparedStatement stmt;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("org.postgresql.Driver");
             Connection cons = DriverManager.getConnection("jdbc:mysql://localhost:3306/maven", "root", "root");
             stmt = cons.prepareStatement(sql);
             stmt.executeUpdate();
@@ -104,7 +104,7 @@ public class ProductService extends productsGrpc.productsImplBase {
         ResultSet rSet = null;
         try {
             String sql = "select * from products where id=" + id;
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("org.postgresql.Driver");
             Connection cons = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/maven", "root", "root");
             Statement stmt = cons.createStatement();
             rSet = stmt.executeQuery(sql);
@@ -118,7 +118,7 @@ public class ProductService extends productsGrpc.productsImplBase {
         String sql = "INSERT INTO products(NAME, price, stock) VALUES(?,?,?)";
         PreparedStatement st = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("org.postgresql.Driver");
             Connection cons = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/maven", "root", "root");
             st = (PreparedStatement) cons.prepareStatement(sql);
             st.setString(1, product.getId());
