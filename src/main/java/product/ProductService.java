@@ -49,7 +49,36 @@ public class ProductService extends productsGrpc.productsImplBase {
 
     @Override
     public void edit(ProductOuterClass.Product request, StreamObserver<ProductOuterClass.Product> responseObserver) {
+        // DELETE FROM DATABASE
+        String pid = request.getId();
+        String sql = "delete from products where id=" + pid;
+        PreparedStatement stmt;
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection cons = DriverManager.getConnection("jdbc:mysql://localhost:3306/maven", "root", "root");
+            stmt = cons.prepareStatement(sql);
+            stmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
+        // CREATE A NEW ONE
+        String id = request.getId();
+        String name = request.getName();
+        int price = request.getPrice();
+
+        ProductOuterClass.Product product = ProductOuterClass.Product.newBuilder().setId(id).setName(name).setPrice(price).build();
+        try {
+            PreparedStatement st = addProduct(product);
+            st.executeUpdate();
+
+            System.out.println("values inserted");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        responseObserver.onNext(product);
+        responseObserver.onCompleted();
     }
 
     @Override
