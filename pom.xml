@@ -47,7 +47,8 @@
     </properties>
 
     <build>
-        <defaultGoal>clean generate-sources compile install</defaultGoal>
+        <defaultGoal>clean generate-sources compile install
+        </defaultGoal>
 
         <plugins>
             <!-- compile proto file into java files. -->

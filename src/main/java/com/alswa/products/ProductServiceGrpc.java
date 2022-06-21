@@ -20,38 +20,38 @@ import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.15.0)",
     comments = "Source: product.proto")
-public final class productsGrpc {
+public final class ProductServiceGrpc {
 
-  private productsGrpc() {}
+  private ProductServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "products";
+  public static final String SERVICE_NAME = "com.alswa.products.ProductService";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.DefaultRequest,
       com.alswa.products.ProductOuterClass.Product> getFetchMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "fetch",
+      fullMethodName = SERVICE_NAME + '/' + "Fetch",
       requestType = com.alswa.products.ProductOuterClass.DefaultRequest.class,
       responseType = com.alswa.products.ProductOuterClass.Product.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.DefaultRequest,
       com.alswa.products.ProductOuterClass.Product> getFetchMethod() {
     io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.DefaultRequest, com.alswa.products.ProductOuterClass.Product> getFetchMethod;
-    if ((getFetchMethod = productsGrpc.getFetchMethod) == null) {
-      synchronized (productsGrpc.class) {
-        if ((getFetchMethod = productsGrpc.getFetchMethod) == null) {
-          productsGrpc.getFetchMethod = getFetchMethod = 
+    if ((getFetchMethod = ProductServiceGrpc.getFetchMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getFetchMethod = ProductServiceGrpc.getFetchMethod) == null) {
+          ProductServiceGrpc.getFetchMethod = getFetchMethod = 
               io.grpc.MethodDescriptor.<com.alswa.products.ProductOuterClass.DefaultRequest, com.alswa.products.ProductOuterClass.Product>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "products", "fetch"))
+                  "com.alswa.products.ProductService", "Fetch"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.alswa.products.ProductOuterClass.DefaultRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.alswa.products.ProductOuterClass.Product.getDefaultInstance()))
-                  .setSchemaDescriptor(new productsMethodDescriptorSupplier("fetch"))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("Fetch"))
                   .build();
           }
         }
@@ -59,31 +59,31 @@ public final class productsGrpc {
      return getFetchMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.Product,
+  private static volatile io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.ProductParams,
       com.alswa.products.ProductOuterClass.Empty> getCreateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "create",
-      requestType = com.alswa.products.ProductOuterClass.Product.class,
+      fullMethodName = SERVICE_NAME + '/' + "Create",
+      requestType = com.alswa.products.ProductOuterClass.ProductParams.class,
       responseType = com.alswa.products.ProductOuterClass.Empty.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.Product,
+  public static io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.ProductParams,
       com.alswa.products.ProductOuterClass.Empty> getCreateMethod() {
-    io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.Product, com.alswa.products.ProductOuterClass.Empty> getCreateMethod;
-    if ((getCreateMethod = productsGrpc.getCreateMethod) == null) {
-      synchronized (productsGrpc.class) {
-        if ((getCreateMethod = productsGrpc.getCreateMethod) == null) {
-          productsGrpc.getCreateMethod = getCreateMethod = 
-              io.grpc.MethodDescriptor.<com.alswa.products.ProductOuterClass.Product, com.alswa.products.ProductOuterClass.Empty>newBuilder()
+    io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.ProductParams, com.alswa.products.ProductOuterClass.Empty> getCreateMethod;
+    if ((getCreateMethod = ProductServiceGrpc.getCreateMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getCreateMethod = ProductServiceGrpc.getCreateMethod) == null) {
+          ProductServiceGrpc.getCreateMethod = getCreateMethod = 
+              io.grpc.MethodDescriptor.<com.alswa.products.ProductOuterClass.ProductParams, com.alswa.products.ProductOuterClass.Empty>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "products", "create"))
+                  "com.alswa.products.ProductService", "Create"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.alswa.products.ProductOuterClass.Product.getDefaultInstance()))
+                  com.alswa.products.ProductOuterClass.ProductParams.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.alswa.products.ProductOuterClass.Empty.getDefaultInstance()))
-                  .setSchemaDescriptor(new productsMethodDescriptorSupplier("create"))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("Create"))
                   .build();
           }
         }
@@ -95,27 +95,27 @@ public final class productsGrpc {
       com.alswa.products.ProductOuterClass.Product> getEditMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "edit",
+      fullMethodName = SERVICE_NAME + '/' + "Edit",
       requestType = com.alswa.products.ProductOuterClass.Product.class,
       responseType = com.alswa.products.ProductOuterClass.Product.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.Product,
       com.alswa.products.ProductOuterClass.Product> getEditMethod() {
     io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.Product, com.alswa.products.ProductOuterClass.Product> getEditMethod;
-    if ((getEditMethod = productsGrpc.getEditMethod) == null) {
-      synchronized (productsGrpc.class) {
-        if ((getEditMethod = productsGrpc.getEditMethod) == null) {
-          productsGrpc.getEditMethod = getEditMethod = 
+    if ((getEditMethod = ProductServiceGrpc.getEditMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getEditMethod = ProductServiceGrpc.getEditMethod) == null) {
+          ProductServiceGrpc.getEditMethod = getEditMethod = 
               io.grpc.MethodDescriptor.<com.alswa.products.ProductOuterClass.Product, com.alswa.products.ProductOuterClass.Product>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "products", "edit"))
+                  "com.alswa.products.ProductService", "Edit"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.alswa.products.ProductOuterClass.Product.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.alswa.products.ProductOuterClass.Product.getDefaultInstance()))
-                  .setSchemaDescriptor(new productsMethodDescriptorSupplier("edit"))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("Edit"))
                   .build();
           }
         }
@@ -127,27 +127,27 @@ public final class productsGrpc {
       com.alswa.products.ProductOuterClass.Empty> getDeleteMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "delete",
+      fullMethodName = SERVICE_NAME + '/' + "Delete",
       requestType = com.alswa.products.ProductOuterClass.DefaultRequest.class,
       responseType = com.alswa.products.ProductOuterClass.Empty.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.DefaultRequest,
       com.alswa.products.ProductOuterClass.Empty> getDeleteMethod() {
     io.grpc.MethodDescriptor<com.alswa.products.ProductOuterClass.DefaultRequest, com.alswa.products.ProductOuterClass.Empty> getDeleteMethod;
-    if ((getDeleteMethod = productsGrpc.getDeleteMethod) == null) {
-      synchronized (productsGrpc.class) {
-        if ((getDeleteMethod = productsGrpc.getDeleteMethod) == null) {
-          productsGrpc.getDeleteMethod = getDeleteMethod = 
+    if ((getDeleteMethod = ProductServiceGrpc.getDeleteMethod) == null) {
+      synchronized (ProductServiceGrpc.class) {
+        if ((getDeleteMethod = ProductServiceGrpc.getDeleteMethod) == null) {
+          ProductServiceGrpc.getDeleteMethod = getDeleteMethod = 
               io.grpc.MethodDescriptor.<com.alswa.products.ProductOuterClass.DefaultRequest, com.alswa.products.ProductOuterClass.Empty>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "products", "delete"))
+                  "com.alswa.products.ProductService", "Delete"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.alswa.products.ProductOuterClass.DefaultRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.alswa.products.ProductOuterClass.Empty.getDefaultInstance()))
-                  .setSchemaDescriptor(new productsMethodDescriptorSupplier("delete"))
+                  .setSchemaDescriptor(new ProductServiceMethodDescriptorSupplier("Delete"))
                   .build();
           }
         }
@@ -158,29 +158,29 @@ public final class productsGrpc {
   /**
    * Creates a new async stub that supports all call types for the service
    */
-  public static productsStub newStub(io.grpc.Channel channel) {
-    return new productsStub(channel);
+  public static ProductServiceStub newStub(io.grpc.Channel channel) {
+    return new ProductServiceStub(channel);
   }
 
   /**
    * Creates a new blocking-style stub that supports unary and streaming output calls on the service
    */
-  public static productsBlockingStub newBlockingStub(
+  public static ProductServiceBlockingStub newBlockingStub(
       io.grpc.Channel channel) {
-    return new productsBlockingStub(channel);
+    return new ProductServiceBlockingStub(channel);
   }
 
   /**
    * Creates a new ListenableFuture-style stub that supports unary calls on the service
    */
-  public static productsFutureStub newFutureStub(
+  public static ProductServiceFutureStub newFutureStub(
       io.grpc.Channel channel) {
-    return new productsFutureStub(channel);
+    return new ProductServiceFutureStub(channel);
   }
 
   /**
    */
-  public static abstract class productsImplBase implements io.grpc.BindableService {
+  public static abstract class ProductServiceImplBase implements io.grpc.BindableService {
 
     /**
      */
@@ -191,7 +191,7 @@ public final class productsGrpc {
 
     /**
      */
-    public void create(com.alswa.products.ProductOuterClass.Product request,
+    public void create(com.alswa.products.ProductOuterClass.ProductParams request,
         io.grpc.stub.StreamObserver<com.alswa.products.ProductOuterClass.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateMethod(), responseObserver);
     }
@@ -223,7 +223,7 @@ public final class productsGrpc {
             getCreateMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.alswa.products.ProductOuterClass.Product,
+                com.alswa.products.ProductOuterClass.ProductParams,
                 com.alswa.products.ProductOuterClass.Empty>(
                   this, METHODID_CREATE)))
           .addMethod(
@@ -246,20 +246,20 @@ public final class productsGrpc {
 
   /**
    */
-  public static final class productsStub extends io.grpc.stub.AbstractStub<productsStub> {
-    private productsStub(io.grpc.Channel channel) {
+  public static final class ProductServiceStub extends io.grpc.stub.AbstractStub<ProductServiceStub> {
+    private ProductServiceStub(io.grpc.Channel channel) {
       super(channel);
     }
 
-    private productsStub(io.grpc.Channel channel,
+    private ProductServiceStub(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected productsStub build(io.grpc.Channel channel,
+    protected ProductServiceStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
-      return new productsStub(channel, callOptions);
+      return new ProductServiceStub(channel, callOptions);
     }
 
     /**
@@ -272,7 +272,7 @@ public final class productsGrpc {
 
     /**
      */
-    public void create(com.alswa.products.ProductOuterClass.Product request,
+    public void create(com.alswa.products.ProductOuterClass.ProductParams request,
         io.grpc.stub.StreamObserver<com.alswa.products.ProductOuterClass.Empty> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getCreateMethod(), getCallOptions()), request, responseObserver);
@@ -297,20 +297,20 @@ public final class productsGrpc {
 
   /**
    */
-  public static final class productsBlockingStub extends io.grpc.stub.AbstractStub<productsBlockingStub> {
-    private productsBlockingStub(io.grpc.Channel channel) {
+  public static final class ProductServiceBlockingStub extends io.grpc.stub.AbstractStub<ProductServiceBlockingStub> {
+    private ProductServiceBlockingStub(io.grpc.Channel channel) {
       super(channel);
     }
 
-    private productsBlockingStub(io.grpc.Channel channel,
+    private ProductServiceBlockingStub(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected productsBlockingStub build(io.grpc.Channel channel,
+    protected ProductServiceBlockingStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
-      return new productsBlockingStub(channel, callOptions);
+      return new ProductServiceBlockingStub(channel, callOptions);
     }
 
     /**
@@ -322,7 +322,7 @@ public final class productsGrpc {
 
     /**
      */
-    public com.alswa.products.ProductOuterClass.Empty create(com.alswa.products.ProductOuterClass.Product request) {
+    public com.alswa.products.ProductOuterClass.Empty create(com.alswa.products.ProductOuterClass.ProductParams request) {
       return blockingUnaryCall(
           getChannel(), getCreateMethod(), getCallOptions(), request);
     }
@@ -344,20 +344,20 @@ public final class productsGrpc {
 
   /**
    */
-  public static final class productsFutureStub extends io.grpc.stub.AbstractStub<productsFutureStub> {
-    private productsFutureStub(io.grpc.Channel channel) {
+  public static final class ProductServiceFutureStub extends io.grpc.stub.AbstractStub<ProductServiceFutureStub> {
+    private ProductServiceFutureStub(io.grpc.Channel channel) {
       super(channel);
     }
 
-    private productsFutureStub(io.grpc.Channel channel,
+    private ProductServiceFutureStub(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       super(channel, callOptions);
     }
 
     @java.lang.Override
-    protected productsFutureStub build(io.grpc.Channel channel,
+    protected ProductServiceFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
-      return new productsFutureStub(channel, callOptions);
+      return new ProductServiceFutureStub(channel, callOptions);
     }
 
     /**
@@ -371,7 +371,7 @@ public final class productsGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<com.alswa.products.ProductOuterClass.Empty> create(
-        com.alswa.products.ProductOuterClass.Product request) {
+        com.alswa.products.ProductOuterClass.ProductParams request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateMethod(), getCallOptions()), request);
     }
@@ -403,10 +403,10 @@ public final class productsGrpc {
       io.grpc.stub.ServerCalls.ServerStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.ClientStreamingMethod<Req, Resp>,
       io.grpc.stub.ServerCalls.BidiStreamingMethod<Req, Resp> {
-    private final productsImplBase serviceImpl;
+    private final ProductServiceImplBase serviceImpl;
     private final int methodId;
 
-    MethodHandlers(productsImplBase serviceImpl, int methodId) {
+    MethodHandlers(ProductServiceImplBase serviceImpl, int methodId) {
       this.serviceImpl = serviceImpl;
       this.methodId = methodId;
     }
@@ -420,7 +420,7 @@ public final class productsGrpc {
               (io.grpc.stub.StreamObserver<com.alswa.products.ProductOuterClass.Product>) responseObserver);
           break;
         case METHODID_CREATE:
-          serviceImpl.create((com.alswa.products.ProductOuterClass.Product) request,
+          serviceImpl.create((com.alswa.products.ProductOuterClass.ProductParams) request,
               (io.grpc.stub.StreamObserver<com.alswa.products.ProductOuterClass.Empty>) responseObserver);
           break;
         case METHODID_EDIT:
@@ -447,9 +447,9 @@ public final class productsGrpc {
     }
   }
 
-  private static abstract class productsBaseDescriptorSupplier
+  private static abstract class ProductServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
-    productsBaseDescriptorSupplier() {}
+    ProductServiceBaseDescriptorSupplier() {}
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
@@ -458,21 +458,21 @@ public final class productsGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
-      return getFileDescriptor().findServiceByName("products");
+      return getFileDescriptor().findServiceByName("ProductService");
     }
   }
 
-  private static final class productsFileDescriptorSupplier
-      extends productsBaseDescriptorSupplier {
-    productsFileDescriptorSupplier() {}
+  private static final class ProductServiceFileDescriptorSupplier
+      extends ProductServiceBaseDescriptorSupplier {
+    ProductServiceFileDescriptorSupplier() {}
   }
 
-  private static final class productsMethodDescriptorSupplier
-      extends productsBaseDescriptorSupplier
+  private static final class ProductServiceMethodDescriptorSupplier
+      extends ProductServiceBaseDescriptorSupplier
       implements io.grpc.protobuf.ProtoMethodDescriptorSupplier {
     private final String methodName;
 
-    productsMethodDescriptorSupplier(String methodName) {
+    ProductServiceMethodDescriptorSupplier(String methodName) {
       this.methodName = methodName;
     }
 
@@ -487,11 +487,11 @@ public final class productsGrpc {
   public static io.grpc.ServiceDescriptor getServiceDescriptor() {
     io.grpc.ServiceDescriptor result = serviceDescriptor;
     if (result == null) {
-      synchronized (productsGrpc.class) {
+      synchronized (ProductServiceGrpc.class) {
         result = serviceDescriptor;
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
-              .setSchemaDescriptor(new productsFileDescriptorSupplier())
+              .setSchemaDescriptor(new ProductServiceFileDescriptorSupplier())
               .addMethod(getFetchMethod())
               .addMethod(getCreateMethod())
               .addMethod(getEditMethod())

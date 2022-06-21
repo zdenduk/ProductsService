@@ -1,22 +1,26 @@
 syntax = "proto3";
+package com.alswa.products;
 
-option java_package = "com.alswa.products";
-
-service products{
-    rpc fetch(DefaultRequest)  returns (Product);
-    rpc create(Product)  returns (Empty);
-    rpc edit(Product)  returns (Product);
-    rpc delete(DefaultRequest)  returns (Empty);
-}
-
-message DefaultRequest{
-       string id = 1;
+service ProductService {
+    rpc Fetch(DefaultRequest) returns (Product);
+    rpc Create(ProductParams) returns (Empty);
+    rpc Edit(Product) returns (Product);
+    rpc Delete(DefaultRequest) returns (Empty);
 }
 
 message Empty {}
 
-message Product{
+message DefaultRequest {
+    string id = 1;
+}
+
+message Product {
     string id = 1;
     string name = 2;
     int32 price = 3;
+}
+
+message ProductParams{
+    string name = 1;
+    int32 price = 2;
 }

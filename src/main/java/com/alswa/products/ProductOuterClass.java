@@ -14,8 +14,420 @@ public final class ProductOuterClass {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  public interface EmptyOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.alswa.products.Empty)
+      com.google.protobuf.MessageOrBuilder {
+  }
+  /**
+   * Protobuf type {@code com.alswa.products.Empty}
+   */
+  public  static final class Empty extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.alswa.products.Empty)
+      EmptyOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use Empty.newBuilder() to construct.
+    private Empty(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private Empty() {
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private Empty(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Empty_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Empty_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.alswa.products.ProductOuterClass.Empty.class, com.alswa.products.ProductOuterClass.Empty.Builder.class);
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.alswa.products.ProductOuterClass.Empty)) {
+        return super.equals(obj);
+      }
+      com.alswa.products.ProductOuterClass.Empty other = (com.alswa.products.ProductOuterClass.Empty) obj;
+
+      boolean result = true;
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.alswa.products.ProductOuterClass.Empty prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.alswa.products.Empty}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.alswa.products.Empty)
+        com.alswa.products.ProductOuterClass.EmptyOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Empty_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Empty_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.alswa.products.ProductOuterClass.Empty.class, com.alswa.products.ProductOuterClass.Empty.Builder.class);
+      }
+
+      // Construct using com.alswa.products.ProductOuterClass.Empty.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Empty_descriptor;
+      }
+
+      @java.lang.Override
+      public com.alswa.products.ProductOuterClass.Empty getDefaultInstanceForType() {
+        return com.alswa.products.ProductOuterClass.Empty.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.alswa.products.ProductOuterClass.Empty build() {
+        com.alswa.products.ProductOuterClass.Empty result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.alswa.products.ProductOuterClass.Empty buildPartial() {
+        com.alswa.products.ProductOuterClass.Empty result = new com.alswa.products.ProductOuterClass.Empty(this);
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.alswa.products.ProductOuterClass.Empty) {
+          return mergeFrom((com.alswa.products.ProductOuterClass.Empty)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.alswa.products.ProductOuterClass.Empty other) {
+        if (other == com.alswa.products.ProductOuterClass.Empty.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.alswa.products.ProductOuterClass.Empty parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.alswa.products.ProductOuterClass.Empty) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.alswa.products.Empty)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.alswa.products.Empty)
+    private static final com.alswa.products.ProductOuterClass.Empty DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.alswa.products.ProductOuterClass.Empty();
+    }
+
+    public static com.alswa.products.ProductOuterClass.Empty getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<Empty>
+        PARSER = new com.google.protobuf.AbstractParser<Empty>() {
+      @java.lang.Override
+      public Empty parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new Empty(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<Empty> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<Empty> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.alswa.products.ProductOuterClass.Empty getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   public interface DefaultRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:DefaultRequest)
+      // @@protoc_insertion_point(interface_extends:com.alswa.products.DefaultRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -29,11 +441,11 @@ public final class ProductOuterClass {
         getIdBytes();
   }
   /**
-   * Protobuf type {@code DefaultRequest}
+   * Protobuf type {@code com.alswa.products.DefaultRequest}
    */
   public  static final class DefaultRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:DefaultRequest)
+      // @@protoc_insertion_point(message_implements:com.alswa.products.DefaultRequest)
       DefaultRequestOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use DefaultRequest.newBuilder() to construct.
@@ -95,13 +507,13 @@ public final class ProductOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.alswa.products.ProductOuterClass.internal_static_DefaultRequest_descriptor;
+      return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_DefaultRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.alswa.products.ProductOuterClass.internal_static_DefaultRequest_fieldAccessorTable
+      return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_DefaultRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.alswa.products.ProductOuterClass.DefaultRequest.class, com.alswa.products.ProductOuterClass.DefaultRequest.Builder.class);
     }
@@ -296,21 +708,21 @@ public final class ProductOuterClass {
       return builder;
     }
     /**
-     * Protobuf type {@code DefaultRequest}
+     * Protobuf type {@code com.alswa.products.DefaultRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:DefaultRequest)
+        // @@protoc_insertion_point(builder_implements:com.alswa.products.DefaultRequest)
         com.alswa.products.ProductOuterClass.DefaultRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.alswa.products.ProductOuterClass.internal_static_DefaultRequest_descriptor;
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_DefaultRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.alswa.products.ProductOuterClass.internal_static_DefaultRequest_fieldAccessorTable
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_DefaultRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.alswa.products.ProductOuterClass.DefaultRequest.class, com.alswa.products.ProductOuterClass.DefaultRequest.Builder.class);
       }
@@ -341,7 +753,7 @@ public final class ProductOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.alswa.products.ProductOuterClass.internal_static_DefaultRequest_descriptor;
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_DefaultRequest_descriptor;
       }
 
       @java.lang.Override
@@ -524,10 +936,10 @@ public final class ProductOuterClass {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:DefaultRequest)
+      // @@protoc_insertion_point(builder_scope:com.alswa.products.DefaultRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:DefaultRequest)
+    // @@protoc_insertion_point(class_scope:com.alswa.products.DefaultRequest)
     private static final com.alswa.products.ProductOuterClass.DefaultRequest DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.alswa.products.ProductOuterClass.DefaultRequest();
@@ -564,420 +976,8 @@ public final class ProductOuterClass {
 
   }
 
-  public interface EmptyOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Empty)
-      com.google.protobuf.MessageOrBuilder {
-  }
-  /**
-   * Protobuf type {@code Empty}
-   */
-  public  static final class Empty extends
-      com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Empty)
-      EmptyOrBuilder {
-  private static final long serialVersionUID = 0L;
-    // Use Empty.newBuilder() to construct.
-    private Empty(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
-      super(builder);
-    }
-    private Empty() {
-    }
-
-    @java.lang.Override
-    public final com.google.protobuf.UnknownFieldSet
-    getUnknownFields() {
-      return this.unknownFields;
-    }
-    private Empty(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      this();
-      if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
-      }
-      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
-          com.google.protobuf.UnknownFieldSet.newBuilder();
-      try {
-        boolean done = false;
-        while (!done) {
-          int tag = input.readTag();
-          switch (tag) {
-            case 0:
-              done = true;
-              break;
-            default: {
-              if (!parseUnknownFieldProto3(
-                  input, unknownFields, extensionRegistry, tag)) {
-                done = true;
-              }
-              break;
-            }
-          }
-        }
-      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        throw e.setUnfinishedMessage(this);
-      } catch (java.io.IOException e) {
-        throw new com.google.protobuf.InvalidProtocolBufferException(
-            e).setUnfinishedMessage(this);
-      } finally {
-        this.unknownFields = unknownFields.build();
-        makeExtensionsImmutable();
-      }
-    }
-    public static final com.google.protobuf.Descriptors.Descriptor
-        getDescriptor() {
-      return com.alswa.products.ProductOuterClass.internal_static_Empty_descriptor;
-    }
-
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-        internalGetFieldAccessorTable() {
-      return com.alswa.products.ProductOuterClass.internal_static_Empty_fieldAccessorTable
-          .ensureFieldAccessorsInitialized(
-              com.alswa.products.ProductOuterClass.Empty.class, com.alswa.products.ProductOuterClass.Empty.Builder.class);
-    }
-
-    private byte memoizedIsInitialized = -1;
-    @java.lang.Override
-    public final boolean isInitialized() {
-      byte isInitialized = memoizedIsInitialized;
-      if (isInitialized == 1) return true;
-      if (isInitialized == 0) return false;
-
-      memoizedIsInitialized = 1;
-      return true;
-    }
-
-    @java.lang.Override
-    public void writeTo(com.google.protobuf.CodedOutputStream output)
-                        throws java.io.IOException {
-      unknownFields.writeTo(output);
-    }
-
-    @java.lang.Override
-    public int getSerializedSize() {
-      int size = memoizedSize;
-      if (size != -1) return size;
-
-      size = 0;
-      size += unknownFields.getSerializedSize();
-      memoizedSize = size;
-      return size;
-    }
-
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
-      if (obj == this) {
-       return true;
-      }
-      if (!(obj instanceof com.alswa.products.ProductOuterClass.Empty)) {
-        return super.equals(obj);
-      }
-      com.alswa.products.ProductOuterClass.Empty other = (com.alswa.products.ProductOuterClass.Empty) obj;
-
-      boolean result = true;
-      result = result && unknownFields.equals(other.unknownFields);
-      return result;
-    }
-
-    @java.lang.Override
-    public int hashCode() {
-      if (memoizedHashCode != 0) {
-        return memoizedHashCode;
-      }
-      int hash = 41;
-      hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (29 * hash) + unknownFields.hashCode();
-      memoizedHashCode = hash;
-      return hash;
-    }
-
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
-        java.nio.ByteBuffer data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
-        java.nio.ByteBuffer data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
-        com.google.protobuf.ByteString data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
-        com.google.protobuf.ByteString data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(byte[] data)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
-        byte[] data,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws com.google.protobuf.InvalidProtocolBufferException {
-      return PARSER.parseFrom(data, extensionRegistry);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseDelimitedFrom(java.io.InputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseDelimitedFrom(
-        java.io.InputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
-        com.google.protobuf.CodedInputStream input)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input);
-    }
-    public static com.alswa.products.ProductOuterClass.Empty parseFrom(
-        com.google.protobuf.CodedInputStream input,
-        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-        throws java.io.IOException {
-      return com.google.protobuf.GeneratedMessageV3
-          .parseWithIOException(PARSER, input, extensionRegistry);
-    }
-
-    @java.lang.Override
-    public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder() {
-      return DEFAULT_INSTANCE.toBuilder();
-    }
-    public static Builder newBuilder(com.alswa.products.ProductOuterClass.Empty prototype) {
-      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
-    }
-    @java.lang.Override
-    public Builder toBuilder() {
-      return this == DEFAULT_INSTANCE
-          ? new Builder() : new Builder().mergeFrom(this);
-    }
-
-    @java.lang.Override
-    protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-      Builder builder = new Builder(parent);
-      return builder;
-    }
-    /**
-     * Protobuf type {@code Empty}
-     */
-    public static final class Builder extends
-        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Empty)
-        com.alswa.products.ProductOuterClass.EmptyOrBuilder {
-      public static final com.google.protobuf.Descriptors.Descriptor
-          getDescriptor() {
-        return com.alswa.products.ProductOuterClass.internal_static_Empty_descriptor;
-      }
-
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-          internalGetFieldAccessorTable() {
-        return com.alswa.products.ProductOuterClass.internal_static_Empty_fieldAccessorTable
-            .ensureFieldAccessorsInitialized(
-                com.alswa.products.ProductOuterClass.Empty.class, com.alswa.products.ProductOuterClass.Empty.Builder.class);
-      }
-
-      // Construct using com.alswa.products.ProductOuterClass.Empty.newBuilder()
-      private Builder() {
-        maybeForceBuilderInitialization();
-      }
-
-      private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
-        super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-        }
-      }
-      @java.lang.Override
-      public Builder clear() {
-        super.clear();
-        return this;
-      }
-
-      @java.lang.Override
-      public com.google.protobuf.Descriptors.Descriptor
-          getDescriptorForType() {
-        return com.alswa.products.ProductOuterClass.internal_static_Empty_descriptor;
-      }
-
-      @java.lang.Override
-      public com.alswa.products.ProductOuterClass.Empty getDefaultInstanceForType() {
-        return com.alswa.products.ProductOuterClass.Empty.getDefaultInstance();
-      }
-
-      @java.lang.Override
-      public com.alswa.products.ProductOuterClass.Empty build() {
-        com.alswa.products.ProductOuterClass.Empty result = buildPartial();
-        if (!result.isInitialized()) {
-          throw newUninitializedMessageException(result);
-        }
-        return result;
-      }
-
-      @java.lang.Override
-      public com.alswa.products.ProductOuterClass.Empty buildPartial() {
-        com.alswa.products.ProductOuterClass.Empty result = new com.alswa.products.ProductOuterClass.Empty(this);
-        onBuilt();
-        return result;
-      }
-
-      @java.lang.Override
-      public Builder clone() {
-        return (Builder) super.clone();
-      }
-      @java.lang.Override
-      public Builder setField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.setField(field, value);
-      }
-      @java.lang.Override
-      public Builder clearField(
-          com.google.protobuf.Descriptors.FieldDescriptor field) {
-        return (Builder) super.clearField(field);
-      }
-      @java.lang.Override
-      public Builder clearOneof(
-          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
-        return (Builder) super.clearOneof(oneof);
-      }
-      @java.lang.Override
-      public Builder setRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
-        return (Builder) super.setRepeatedField(field, index, value);
-      }
-      @java.lang.Override
-      public Builder addRepeatedField(
-          com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
-        return (Builder) super.addRepeatedField(field, value);
-      }
-      @java.lang.Override
-      public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.alswa.products.ProductOuterClass.Empty) {
-          return mergeFrom((com.alswa.products.ProductOuterClass.Empty)other);
-        } else {
-          super.mergeFrom(other);
-          return this;
-        }
-      }
-
-      public Builder mergeFrom(com.alswa.products.ProductOuterClass.Empty other) {
-        if (other == com.alswa.products.ProductOuterClass.Empty.getDefaultInstance()) return this;
-        this.mergeUnknownFields(other.unknownFields);
-        onChanged();
-        return this;
-      }
-
-      @java.lang.Override
-      public final boolean isInitialized() {
-        return true;
-      }
-
-      @java.lang.Override
-      public Builder mergeFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws java.io.IOException {
-        com.alswa.products.ProductOuterClass.Empty parsedMessage = null;
-        try {
-          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
-        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.alswa.products.ProductOuterClass.Empty) e.getUnfinishedMessage();
-          throw e.unwrapIOException();
-        } finally {
-          if (parsedMessage != null) {
-            mergeFrom(parsedMessage);
-          }
-        }
-        return this;
-      }
-      @java.lang.Override
-      public final Builder setUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.setUnknownFieldsProto3(unknownFields);
-      }
-
-      @java.lang.Override
-      public final Builder mergeUnknownFields(
-          final com.google.protobuf.UnknownFieldSet unknownFields) {
-        return super.mergeUnknownFields(unknownFields);
-      }
-
-
-      // @@protoc_insertion_point(builder_scope:Empty)
-    }
-
-    // @@protoc_insertion_point(class_scope:Empty)
-    private static final com.alswa.products.ProductOuterClass.Empty DEFAULT_INSTANCE;
-    static {
-      DEFAULT_INSTANCE = new com.alswa.products.ProductOuterClass.Empty();
-    }
-
-    public static com.alswa.products.ProductOuterClass.Empty getDefaultInstance() {
-      return DEFAULT_INSTANCE;
-    }
-
-    private static final com.google.protobuf.Parser<Empty>
-        PARSER = new com.google.protobuf.AbstractParser<Empty>() {
-      @java.lang.Override
-      public Empty parsePartialFrom(
-          com.google.protobuf.CodedInputStream input,
-          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
-          throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Empty(input, extensionRegistry);
-      }
-    };
-
-    public static com.google.protobuf.Parser<Empty> parser() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.google.protobuf.Parser<Empty> getParserForType() {
-      return PARSER;
-    }
-
-    @java.lang.Override
-    public com.alswa.products.ProductOuterClass.Empty getDefaultInstanceForType() {
-      return DEFAULT_INSTANCE;
-    }
-
-  }
-
   public interface ProductOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:Product)
+      // @@protoc_insertion_point(interface_extends:com.alswa.products.Product)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -1006,11 +1006,11 @@ public final class ProductOuterClass {
     int getPrice();
   }
   /**
-   * Protobuf type {@code Product}
+   * Protobuf type {@code com.alswa.products.Product}
    */
   public  static final class Product extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:Product)
+      // @@protoc_insertion_point(message_implements:com.alswa.products.Product)
       ProductOrBuilder {
   private static final long serialVersionUID = 0L;
     // Use Product.newBuilder() to construct.
@@ -1085,13 +1085,13 @@ public final class ProductOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.alswa.products.ProductOuterClass.internal_static_Product_descriptor;
+      return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Product_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.alswa.products.ProductOuterClass.internal_static_Product_fieldAccessorTable
+      return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Product_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               com.alswa.products.ProductOuterClass.Product.class, com.alswa.products.ProductOuterClass.Product.Builder.class);
     }
@@ -1350,21 +1350,21 @@ public final class ProductOuterClass {
       return builder;
     }
     /**
-     * Protobuf type {@code Product}
+     * Protobuf type {@code com.alswa.products.Product}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:Product)
+        // @@protoc_insertion_point(builder_implements:com.alswa.products.Product)
         com.alswa.products.ProductOuterClass.ProductOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.alswa.products.ProductOuterClass.internal_static_Product_descriptor;
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Product_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.alswa.products.ProductOuterClass.internal_static_Product_fieldAccessorTable
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Product_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
                 com.alswa.products.ProductOuterClass.Product.class, com.alswa.products.ProductOuterClass.Product.Builder.class);
       }
@@ -1399,7 +1399,7 @@ public final class ProductOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.alswa.products.ProductOuterClass.internal_static_Product_descriptor;
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_Product_descriptor;
       }
 
       @java.lang.Override
@@ -1686,10 +1686,10 @@ public final class ProductOuterClass {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:Product)
+      // @@protoc_insertion_point(builder_scope:com.alswa.products.Product)
     }
 
-    // @@protoc_insertion_point(class_scope:Product)
+    // @@protoc_insertion_point(class_scope:com.alswa.products.Product)
     private static final com.alswa.products.ProductOuterClass.Product DEFAULT_INSTANCE;
     static {
       DEFAULT_INSTANCE = new com.alswa.products.ProductOuterClass.Product();
@@ -1726,21 +1726,639 @@ public final class ProductOuterClass {
 
   }
 
+  public interface ProductParamsOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:com.alswa.products.ProductParams)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string name = 1;</code>
+     */
+    java.lang.String getName();
+    /**
+     * <code>string name = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getNameBytes();
+
+    /**
+     * <code>int32 price = 2;</code>
+     */
+    int getPrice();
+  }
+  /**
+   * Protobuf type {@code com.alswa.products.ProductParams}
+   */
+  public  static final class ProductParams extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:com.alswa.products.ProductParams)
+      ProductParamsOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use ProductParams.newBuilder() to construct.
+    private ProductParams(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private ProductParams() {
+      name_ = "";
+      price_ = 0;
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private ProductParams(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              name_ = s;
+              break;
+            }
+            case 16: {
+
+              price_ = input.readInt32();
+              break;
+            }
+            default: {
+              if (!parseUnknownFieldProto3(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_ProductParams_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_ProductParams_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.alswa.products.ProductOuterClass.ProductParams.class, com.alswa.products.ProductOuterClass.ProductParams.Builder.class);
+    }
+
+    public static final int NAME_FIELD_NUMBER = 1;
+    private volatile java.lang.Object name_;
+    /**
+     * <code>string name = 1;</code>
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        name_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string name = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PRICE_FIELD_NUMBER = 2;
+    private int price_;
+    /**
+     * <code>int32 price = 2;</code>
+     */
+    public int getPrice() {
+      return price_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getNameBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, name_);
+      }
+      if (price_ != 0) {
+        output.writeInt32(2, price_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getNameBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, name_);
+      }
+      if (price_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, price_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.alswa.products.ProductOuterClass.ProductParams)) {
+        return super.equals(obj);
+      }
+      com.alswa.products.ProductOuterClass.ProductParams other = (com.alswa.products.ProductOuterClass.ProductParams) obj;
+
+      boolean result = true;
+      result = result && getName()
+          .equals(other.getName());
+      result = result && (getPrice()
+          == other.getPrice());
+      result = result && unknownFields.equals(other.unknownFields);
+      return result;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getName().hashCode();
+      hash = (37 * hash) + PRICE_FIELD_NUMBER;
+      hash = (53 * hash) + getPrice();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.alswa.products.ProductOuterClass.ProductParams parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.alswa.products.ProductOuterClass.ProductParams prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code com.alswa.products.ProductParams}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:com.alswa.products.ProductParams)
+        com.alswa.products.ProductOuterClass.ProductParamsOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_ProductParams_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_ProductParams_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.alswa.products.ProductOuterClass.ProductParams.class, com.alswa.products.ProductOuterClass.ProductParams.Builder.class);
+      }
+
+      // Construct using com.alswa.products.ProductOuterClass.ProductParams.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        name_ = "";
+
+        price_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.alswa.products.ProductOuterClass.internal_static_com_alswa_products_ProductParams_descriptor;
+      }
+
+      @java.lang.Override
+      public com.alswa.products.ProductOuterClass.ProductParams getDefaultInstanceForType() {
+        return com.alswa.products.ProductOuterClass.ProductParams.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.alswa.products.ProductOuterClass.ProductParams build() {
+        com.alswa.products.ProductOuterClass.ProductParams result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.alswa.products.ProductOuterClass.ProductParams buildPartial() {
+        com.alswa.products.ProductOuterClass.ProductParams result = new com.alswa.products.ProductOuterClass.ProductParams(this);
+        result.name_ = name_;
+        result.price_ = price_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return (Builder) super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return (Builder) super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return (Builder) super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return (Builder) super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return (Builder) super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.alswa.products.ProductOuterClass.ProductParams) {
+          return mergeFrom((com.alswa.products.ProductOuterClass.ProductParams)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.alswa.products.ProductOuterClass.ProductParams other) {
+        if (other == com.alswa.products.ProductOuterClass.ProductParams.getDefaultInstance()) return this;
+        if (!other.getName().isEmpty()) {
+          name_ = other.name_;
+          onChanged();
+        }
+        if (other.getPrice() != 0) {
+          setPrice(other.getPrice());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.alswa.products.ProductOuterClass.ProductParams parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.alswa.products.ProductOuterClass.ProductParams) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object name_ = "";
+      /**
+       * <code>string name = 1;</code>
+       */
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          name_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string name = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getNameBytes() {
+        java.lang.Object ref = name_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          name_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string name = 1;</code>
+       */
+      public Builder setName(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        name_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string name = 1;</code>
+       */
+      public Builder clearName() {
+        
+        name_ = getDefaultInstance().getName();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string name = 1;</code>
+       */
+      public Builder setNameBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        name_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int price_ ;
+      /**
+       * <code>int32 price = 2;</code>
+       */
+      public int getPrice() {
+        return price_;
+      }
+      /**
+       * <code>int32 price = 2;</code>
+       */
+      public Builder setPrice(int value) {
+        
+        price_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 price = 2;</code>
+       */
+      public Builder clearPrice() {
+        
+        price_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFieldsProto3(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:com.alswa.products.ProductParams)
+    }
+
+    // @@protoc_insertion_point(class_scope:com.alswa.products.ProductParams)
+    private static final com.alswa.products.ProductOuterClass.ProductParams DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.alswa.products.ProductOuterClass.ProductParams();
+    }
+
+    public static com.alswa.products.ProductOuterClass.ProductParams getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<ProductParams>
+        PARSER = new com.google.protobuf.AbstractParser<ProductParams>() {
+      @java.lang.Override
+      public ProductParams parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new ProductParams(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<ProductParams> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<ProductParams> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.alswa.products.ProductOuterClass.ProductParams getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_DefaultRequest_descriptor;
+    internal_static_com_alswa_products_Empty_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_DefaultRequest_fieldAccessorTable;
+      internal_static_com_alswa_products_Empty_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Empty_descriptor;
+    internal_static_com_alswa_products_DefaultRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Empty_fieldAccessorTable;
+      internal_static_com_alswa_products_DefaultRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_Product_descriptor;
+    internal_static_com_alswa_products_Product_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_Product_fieldAccessorTable;
+      internal_static_com_alswa_products_Product_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_alswa_products_ProductParams_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_alswa_products_ProductParams_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1750,13 +2368,19 @@ public final class ProductOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rproduct.proto\"\034\n\016DefaultRequest\022\n\n\002id\030" +
-      "\001 \001(\t\"\007\n\005Empty\"2\n\007Product\022\n\n\002id\030\001 \001(\t\022\014\n" +
-      "\004name\030\002 \001(\t\022\r\n\005price\030\003 \001(\0052\211\001\n\010products\022" +
-      "\"\n\005fetch\022\017.DefaultRequest\032\010.Product\022\032\n\006c" +
-      "reate\022\010.Product\032\006.Empty\022\032\n\004edit\022\010.Produc" +
-      "t\032\010.Product\022!\n\006delete\022\017.DefaultRequest\032\006" +
-      ".EmptyB\024\n\022com.alswa.productsb\006proto3"
+      "\n\rproduct.proto\022\022com.alswa.products\"\007\n\005E" +
+      "mpty\"\034\n\016DefaultRequest\022\n\n\002id\030\001 \001(\t\"2\n\007Pr" +
+      "oduct\022\n\n\002id\030\001 \001(\t\022\014\n\004name\030\002 \001(\t\022\r\n\005price" +
+      "\030\003 \001(\005\",\n\rProductParams\022\014\n\004name\030\001 \001(\t\022\r\n" +
+      "\005price\030\002 \001(\0052\255\002\n\016ProductService\022H\n\005Fetch" +
+      "\022\".com.alswa.products.DefaultRequest\032\033.c" +
+      "om.alswa.products.Product\022F\n\006Create\022!.co" +
+      "m.alswa.products.ProductParams\032\031.com.als" +
+      "wa.products.Empty\022@\n\004Edit\022\033.com.alswa.pr" +
+      "oducts.Product\032\033.com.alswa.products.Prod" +
+      "uct\022G\n\006Delete\022\".com.alswa.products.Defau" +
+      "ltRequest\032\031.com.alswa.products.Emptyb\006pr" +
+      "oto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1770,24 +2394,30 @@ public final class ProductOuterClass {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_DefaultRequest_descriptor =
+    internal_static_com_alswa_products_Empty_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_DefaultRequest_fieldAccessorTable = new
+    internal_static_com_alswa_products_Empty_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_DefaultRequest_descriptor,
-        new java.lang.String[] { "Id", });
-    internal_static_Empty_descriptor =
-      getDescriptor().getMessageTypes().get(1);
-    internal_static_Empty_fieldAccessorTable = new
-      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Empty_descriptor,
+        internal_static_com_alswa_products_Empty_descriptor,
         new java.lang.String[] { });
-    internal_static_Product_descriptor =
-      getDescriptor().getMessageTypes().get(2);
-    internal_static_Product_fieldAccessorTable = new
+    internal_static_com_alswa_products_DefaultRequest_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_com_alswa_products_DefaultRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_Product_descriptor,
+        internal_static_com_alswa_products_DefaultRequest_descriptor,
+        new java.lang.String[] { "Id", });
+    internal_static_com_alswa_products_Product_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_com_alswa_products_Product_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_alswa_products_Product_descriptor,
         new java.lang.String[] { "Id", "Name", "Price", });
+    internal_static_com_alswa_products_ProductParams_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_com_alswa_products_ProductParams_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_alswa_products_ProductParams_descriptor,
+        new java.lang.String[] { "Name", "Price", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
